@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <!-- Linking External Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <!--      Navigation Bar    -->
+         <nav>
+            <ul>
+                <li>Prabuddha Bandara<li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+                
+        <!--      HOME      -->        
+        <section class="container">
+            <div class="faceImage">
+                <img src="Resources/face.png" alt="Image of myself" width="320vh">
+            </div>
+                    
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Prabuddha Bandara</h1>
+                <p class="section__text__p1"><i><small>Undergraduate at University of Peradeniya.<br>I am a quick learner and a team player who is always ready to take on new challenges.....</small></i></p>
+                <div id="socialMedia">
+                    <a href="https://www.linkedin.com" target="_blank" class="icon"><img src="Resources/linkedin.png" alt="Linkedin Logo" width="40vh"></a>
+                    <a href="https://www.gitHub.com" target="_blank" class="icon"><img src="Resources/github.png" alt="GitHub Logo" width="40vh"></a>
+                    <a href="https://www.facebook.com" target="_blank" class="icon"><img src="Resources/facebook.png" alt="Facebook Logo" width="40vh"></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--            Page Up Button           -->
+        <div id="pageUp">
+            <button id="upBtn" onclick="scrollUp()">
+                <img src="Resources/up.png" alt="Scroll Button" width="40px" height="40px">
+            </button>
+        </div>
+        
+
+
+        <!--            E D U C A T I O N       -->
+        <div id="education" >
+            <h1 class="title">Education</h1><hr>
+            <div class="education__container">
+                <div class="education__container__item">
+                    <h2 id="eduTopic1" onmouseover="mouseOn1()" onmouseout="mouseOff1()" style="font-size: 1.5em;cursor: pointer;" onclick="window.location.href='https://www.pdn.ac.lk';">
+                        University of Peradeniya
+                    </h2>
+                    <img src="Resources/UOP.jpg" alt="UOP" width="140vh" style="border-radius: 25%;"><br>
+                    <div id="UOP des">
+                        <p><strong>Faculty of Science</strong></p>
+                        <p><strong>Department of Computer Science and Statistics</strong></p>
+                        <p><strong>Undergraduate</strong></p>
+                        <p><strong>2023 - Present</strong></p>
+                    </div>
+                </div>
+                <div class="education__container__item">
+                    <h2 id="eduTopic2" onmouseover="mouseOn2()" onmouseout="mouseOff2()" style="font-size: 1.5em;" onclick="window.location.href='https://www.esoft.lk';">
+                        Esoft Metro Campus
+                    </h2>
+                    <img src="Resources/esoft.png" alt="Esoft" width="140vh"><br><br>
+                    <p><strong>Kandy Branch</strong></p>
+                    <p><strong>Diploma in Information Technology</strong></p>
+                    <p><strong>Diploma in English</strong></p>
+                    <p><strong>2022 - 2023</strong></p>
+                </div>
+                <div class="education__container__item">
+                    <h2 id="eduTopic3" onmouseover="mouseOn3()" onmouseout="mouseOff3()" style="font-size: 1.5em;" onclick="window.location.href='https://www.dharmaraja.lk';">
+                        Dharmaraja College, Kandy
+                    </h2>
+                    <img src="Resources/dharmaraja.jpg" alt="Dharmaraja" height="140vh" style="border-radius: 25%;"><br><br>
+                    <table style="align-items: center;">
+                        <tr><th>Orinidary Level</th><th>Advanced Level</th><tr>
+                        <tr><td>2018</td><td>2021-2022</th><tr>
+                        <tr><td>9A's</td><td>One A and two C Passes</th><tr>
+                    </table>
+                    <p><strong>2008 - 2022</strong></p>
+                </div>
+            </div><br><br><br><br><br><br>
+        </div>
+        <!--            E X P E R I E N C E      -->
+        <div id="experience">
+            <h1 class="title">Experience</h1><hr><br>
+            <div class = "exp_container">
+                <div class="tech">
+                  <h1>Technology & Programming</h1>
+                 <figure><img src="Resources/html.png" alt="HTML" width="40vh"> <figcaption><h4>HTML</h4></figcaption></figure>
+                 <figure><img src="Resources/css.png" alt="CSS" width="40vh"> <figcaption><h4>CSS</h4></figcaption></figure>
+                 <figure><img src="Resources/js.png" alt="JavaScript" width="40vh"> <figcaption><h4>JavaScipt</h4></figcaption></figure>
+                 <figure> <img src="Resources/java.png" alt="Java" width="40vh"> <figcaption><h4>Java</h4></figcaption></figure>
+                </div>
+
+                <div class = "soft">
+                    <h1>Creative Arts</h1>
+                    <img src="Resources/premiere.png" alt="PP" width="40vh"> <figcaption><h4>Premiere Pro</h4></figcaption>
+                    <img src="Resources/karate.png" alt="Karate" width="40vh"> <figcaption><h4>Karate</h4></figcaption>
+                    <img src="Resources/violin1.png" alt="violin" width="40vh"> <figcaption><h4>Violinist</h4></figcaption>
+                    <img src="Resources/presentation.png" alt="presentation" width="40vh"> <figcaption><h4>Presentation Skills</h4></figcaption>
+                </div>
+            </div>
+        </div>
+
+
+        <!--            C O N T A C T         -->
+        <section id="contact">
+            <p id="section__text__p1" style="text-align: center;font-size: 1.5rem;">Feel Free to</p>
+            <h1 class="title">Contact Me</h1><hr><br>
+
+            <div class="whatsApp">
+                <a href="https://wa.me/94771234567" target="_blank">
+                    <img src="Resources/whatsapp.png" alt="WhatsApp" width="40vh">
+                </a>
+                <p id="section__text__p2">&nbsp;&nbsp;<strong>WhatsApp</strong></p>    
+            </div><br>
+
+            <div class="linkedin">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="Resources/linkedin.png" alt="Linkedin" width="40vh">
+                </a>
+                <p id="section__text__p2">&nbsp;&nbsp;<strong>LinkedIn</strong></p>
+            </div><br>
+
+            <div class="email">
+                <a href="mailto:sample@gmail.com" target="_blank">
+                    <img src="Resources/at.png" alt="Email" width="40vh">
+                </a>
+                <p id="section__text__p2">&nbsp;&nbsp;<strong>Email</strong></p>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+
+    <footer>
+        <p>Copyright&copy; 2025 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prabuddha Bandara.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
+
+</html>
